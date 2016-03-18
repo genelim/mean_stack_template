@@ -14,6 +14,10 @@ function Configuration($urlRouterProvider,$stateProvider,$locationProvider) {
         controller: 'HomeController',
         controllerAs: 'vm'
     })
+    .state('sub', {
+        url:'/sub',
+        templateUrl: 'app/secondary/sub.html'
+    })
     
     $locationProvider.html5Mode({
         enabled: true
